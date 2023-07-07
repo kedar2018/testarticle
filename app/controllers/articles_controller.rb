@@ -1,7 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :authenticate_user! , only: %i[ create new ]
   before_action :set_article, only: %i[ show edit update destroy ]
-  # this is local super2
+  # this is local super2 now this is super3
   # GET /articles or /articles.json
   def index
     @articles = Article.all
